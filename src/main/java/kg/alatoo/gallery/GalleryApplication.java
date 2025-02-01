@@ -10,9 +10,9 @@ import java.io.IOException;
 public class GalleryApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(GalleryApplication.class.getResource("hello-view.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 320, 240);
-        stage.setTitle("Hello!");
+        FXMLLoader fxmlLoader = new FXMLLoader(GalleryApplication.class.getResource("gallery-view.fxml"));
+        Scene scene = new Scene(fxmlLoader.load(), 940, 620);
+        stage.setTitle("Gallery Application");
         stage.setScene(scene);
         stage.show();
     }
