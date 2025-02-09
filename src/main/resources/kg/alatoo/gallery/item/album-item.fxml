@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<VBox styleClass="album-box" stylesheets="@../css/design.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kg.alatoo.gallery.controller.AlbumItemController">
+    <children>
+        <!-- Album Thumbnail -->
+        <ImageView fx:id="thumbnail" fitHeight="150" fitWidth="150" preserveRatio="true" />
+
+        <!-- Album Name -->
+        <Text fx:id="albumName" styleClass="album-name" />
+
+        <!-- Media Info -->
+        <Text fx:id="mediaInfo" styleClass="media-info" />
+    </children>
+</VBox>

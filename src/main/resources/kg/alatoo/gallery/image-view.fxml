@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+
+<?import javafx.scene.layout.VBox?>
+<BorderPane stylesheets="@css/design.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kg.alatoo.gallery.controller.ImageController">
+    <top>
+        <HBox stylesheets="@css/design.css" alignment="CENTER" spacing="10" style="-fx-padding: 10;">
+            <Button fx:id="backButton" onAction="#goBack" text="← Back" />
+            <Label fx:id="imageTitle" style="-fx-font-size: 16px;" text="Image Title" />
+        </HBox>
+    </top>
+    <center>
+        <ScrollPane stylesheets="@css/design.css" fitToHeight="true" fitToWidth="true" style="-fx-padding: 10;" BorderPane.alignment="CENTER">
+            <VBox fx:id="imageContainer" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+                <ImageView fx:id="imageView" preserveRatio="true" />
+            </VBox>
+        </ScrollPane>
+    </center>
+    <bottom>
+        <HBox stylesheets="@css/design.css" alignment="CENTER" spacing="10" style="-fx-padding: 10;">
+            <Button fx:id="zoomInButton" onAction="#zoomIn" text="Zoom In" />
+            <Button fx:id="zoomOutButton" onAction="#zoomOut" text="Zoom Out" />
+        </HBox>
+    </bottom>
+</BorderPane>

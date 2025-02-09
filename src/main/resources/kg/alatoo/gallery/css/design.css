@@ -1,0 +1,87 @@
+.root {
+    -fx-background-color: #1e1e1e; /* Dark background */
+    -fx-text-fill: white; /* Default text color */
+}
+
+.scroll-pane {
+    -fx-background: #1e1e1e;
+    -fx-background-color: #1e1e1e;
+}
+
+.grid-pane {
+    -fx-background: #1e1e1e;
+    -fx-background-color: #1e1e1e;
+}
+
+.button {
+    -fx-background-color: #1e1e1e;
+    -fx-text-fill: #ffffff;
+    -fx-border-color: #ffffff;
+    -fx-border-radius: 5px;
+    -fx-padding: 5px 10px;
+}
+
+.button:hover {
+    -fx-background-color: #7c7c7c;
+    -fx-text-fill: #000000;
+    -fx-border-color: #ffffff;
+    -fx-border-radius: 5px;
+    -fx-padding: 5px 10px;
+}
+
+.gallery-grid {
+    -fx-padding: 10;
+    -fx-hgap: 15;
+    -fx-vgap: 15;
+    -fx-alignment: center;
+}
+
+.album-box {
+    -fx-background-color: #2a2a2a;
+    -fx-border-color: #444;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+}
+
+.album-box:hover {
+    -fx-background-color: #444;
+    -fx-cursor: hand;
+}
+
+
+.album-name {
+    -fx-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+.media-info {
+    -fx-fill: gray;
+    -fx-font-size: 12px;
+}
+
+
+/* Apply a dark background color to the ScrollPane and TilePane in album view */
+.scroll-pane {
+    -fx-background: #1e1e1e;
+    -fx-border-color: #2e2e2e;
+}
+
+.tile-pane {
+    -fx-background: #1e1e1e;
+}
+
+.label {
+    -fx-text-fill: #ffffff; /* White text for labels */
+    -fx-font-size: 16px;
+}
+
+.vbox {
+    -fx-border-color: gray;
+    -fx-background-color: #2e2e2e;
+}
+
+.image-view {
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.8), 10, 0, 0, 1);
+}
+
